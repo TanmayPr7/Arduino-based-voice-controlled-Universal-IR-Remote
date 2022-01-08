@@ -1,0 +1,17 @@
+# Tis is the basic program, with the help of this program we can easily decode Hexa decimal values
+of any Ir controller with the help an Ir reciver and Arduino nano
+
+//------------------------------------------------------------------------------
+// Include the IRremote library header
+//
+#include <IRremote.h>
+
+//------------------------------------------------------------------------------
+// Tell IRremote which Arduino pin is connected to the IR Receiver (TSOP4838)
+//
+int recvPin = 11;
+IRrecv irrecv(recvPin);
+
+//+=============================================================================
+// Configure the Arduino
+//
