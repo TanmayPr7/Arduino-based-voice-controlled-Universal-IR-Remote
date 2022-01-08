@@ -1,0 +1,7 @@
+# This the source caode for Arduino based Voice controlled IR Universal remote controll project
+
+#include <IRremote.h>
+
+IRsend irsend;
+int led = 13;
+String voice;
