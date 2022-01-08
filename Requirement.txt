@@ -1,6 +1,6 @@
 # Components Required
 1.Arduino Nano *2
-2.TSOP IR Reciver
+2.TSOP4383 IR Reciver
 3.IR Led(Transmitter)
 4.Jumper Cables
 5.Breadboard or PCB Board
