@@ -10,3 +10,5 @@ to remote, according to source code it will recive voice command from android an
 then it will work according to source code and according to source code, it will transmit 
 IR hexa decimal value with the help of Ir led(Transmitter). And then it will work as our basic 
 Ir remote.
+
+# This is the basic working of our voice controlled Universal Ir remote Project:)
