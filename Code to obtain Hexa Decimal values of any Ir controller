@@ -15,3 +15,12 @@ IRrecv irrecv(recvPin);
 //+=============================================================================
 // Configure the Arduino
 //
+void  setup ( )
+{
+  Serial.begin(9600);   // Status message will be sent to PC at 9600 baud
+  irrecv.enableIRIn();  // Start the receiver
+}
+
+//+=============================================================================
+// Display IR code
+//
