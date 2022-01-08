@@ -10,3 +10,52 @@ void setup(){
   Serial.begin(9600);
   pinMode(led, OUTPUT);
 }
+
+void loop(){
+  while (Serial.available()){ //Check if there is an available byte to read
+     delay(10); //Delay added to make thing stable 
+    char c = Serial.read(); //Conduct a serial read
+    if (c == '#') {break;} //Exit the loop when the # is detected after the word
+    voice += c; //Shorthand for voice = voice + c
+  }
+  if (voice.length() > 0)
+  ////////////////////////////////////////////////////////////////////
+  {
+    if(voice == "*power on"){
+      irsend.sendNEC(0x20DF10EF, 32);
+      digitalWrite(led, HIGH);
+      delay(500);
+      digitalWrite(led, LOW);
+    }
+    else if(voice == "*volume up"){
+      irsend.sendNEC(0x20DF40BF, 32);
+      digitalWrite(led, HIGH);
+      delay(500);
+      digitalWrite(led, LOW);
+    }
+    else if(voice == "*volume low"){
+      irsend.sendNEC(0x20DFC03F, 32);
+      digitalWrite(led, HIGH);
+      delay(500);
+      digitalWrite(led, LOW);
+    }
+    else if(voice == "*next channel"){
+      irsend.sendNEC(0x20DF00FF, 32);
+      digitalWrite(led, HIGH);
+      delay(500);
+      digitalWrite(led, LOW);
+    }
+    else if(voice == "*previous channel"){
+      irsend.sendNEC(0x20DF807F, 32);
+      digitalWrite(led, HIGH);
+      delay(500);
+      digitalWrite(led, LOW);
+    }
+    else{
+      Serial.print("Error");
+    }
+    
+    voice=""; //Reset the variable after initiating
+    
+  }
+}
