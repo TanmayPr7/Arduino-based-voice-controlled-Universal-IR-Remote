@@ -5,3 +5,8 @@
 IRsend irsend;
 int led = 13;
 String voice;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(led, OUTPUT);
+}
