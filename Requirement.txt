@@ -6,3 +6,7 @@
 5.Breadboard or PCB Board
 6.HC 05 Bluetooth module
 7.10k Resistors *2
+
+# Library Required
+1.IRremote.h
+2.Lowpower.h(If required)
