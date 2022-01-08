@@ -1,0 +1,12 @@
+# This the Arduino based Universal remote system which is controlled by users voice,
+it uses a microcontroller, tsop Ir reciver, ir led(transmitter), bluetooth module, resistor
+, etc.Firstly with the help of tsop Ir reciver and Arduino nano we will decode Ir hexa
+decimal code of any other Ir controller device and save it.
+
+# We will basically use these hexa decimal code which we have recived befor, in our main
+source code.It basically opreates with Hc 05 bluetooth module which is connected to our
+main device. It will get connected with android from which you want to give voice commands
+to remote, according to source code it will recive voice command from android and recognize it
+then it will work according to source code and according to source code, it will transmit 
+IR hexa decimal value with the help of Ir led(Transmitter). And then it will work as our basic 
+Ir remote.

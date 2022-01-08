@@ -1,4 +1,0 @@
-# This the Arduino based Universal remote system which is controlled by users voice,
-it uses a microcontroller, tsop Ir reciver, ir led(transmitter), bluetooth module, resistor
-, etc.Firstly with the help of tsop Ir reciver and Arduino nano we will decode Ir hexa
-decimal code of any other Ir controller device and save it.
